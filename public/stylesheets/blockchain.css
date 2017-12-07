@@ -1,0 +1,21 @@
+.good-state {
+  background: #A0FF9C;
+}
+
+.bad-state {
+  background: #F7A8A8;
+}
+
+#block-params {
+  width: 30% !important;
+}
+
+body > .container-fluid {
+  padding: 60px 15px 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+}

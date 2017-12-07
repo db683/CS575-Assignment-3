@@ -1,0 +1,41 @@
+<div class="well" id="blockwell">
+	  <form class="form-horizontal">
+		<div class="form-group">
+		  <label class="col-sm-2 control-label" id="numlabel" for="blocknumber">Block</label>
+		  <div class="col-sm-10">
+			<div class="input-group"><span class="input-group-addon">#</span>
+			  <input class="form-control" id="blocknumber" value="0" type="text" disabled="disabled"/>
+			</div>
+		  </div>
+		</div>
+		<div class="form-group" id="state">
+		  <label class="col-sm-2 control-label" id="parentlabel" for="blockparent">Parent</label>
+		  <div class="col-sm-10">
+			<input class="form-control" id="blockparent" type="text" disabled="disabled"/>
+		  </div>
+		</div>
+		<div class="form-group">
+		  <label class="col-sm-2 control-label" id="datalabel" for="blockdata">Data</label>
+		  <div class="col-sm-10">
+			<textarea class="form-control" id="blockdata" rows="6"></textarea>
+		  </div>
+		</div>
+		<div class="form-group">
+		  <label class="col-sm-2 control-label" id="nonlabel" for="blocknonce">Nonce</label>
+		  <div class="col-sm-10">
+			<input class="form-control" id="blocknonce" type="text" disabled="disabled"/>
+		  </div>
+		</div>
+		<div class="form-group" id="state">
+		  <label class="col-sm-2 control-label" id="hashlabel" for="blockhash">Hash</label>
+		  <div class="col-sm-10">
+			<input class="form-control" id="blockhash" type="text" disabled="disabled"/>
+		  </div>
+		</div>
+		<div class="form-group">
+		  <div class="col-sm-10">
+			<button type="button" class="btn btn-primary" id="blockmine">Mine</button>
+		  </div>
+		</div>
+	  </form>
+</div>

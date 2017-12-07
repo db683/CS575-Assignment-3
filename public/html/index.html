@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blockchain Demo</title>
+    <link rel="stylesheet" href="/stylesheets/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/lib/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/stylesheets/lib/bootstrap-horizon.css">
+    <link rel="stylesheet" href="/stylesheets/blockchain.css">
+    <script src="/javascripts/lib/jquery.min.js"></script>
+    <script src="/javascripts/lib/bootstrap.min.js"></script>
+    <script src="/javascripts/lib/spin.min.js"></script>
+    <script src="/javascripts/lib/sha256.js"></script>
+    <script src="/javascripts/blockchain.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Blockchain Demo</a>
+        </div>
+      </div>
+    </nav>
+	<div class="container-fluid">
+		<div class="well" id="block-params">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="col-sm-3 control-label" for="complexity">Complexity</label>
+					<div class="col-lg-4">
+						<input class="form-control" id="complexity" type="text" value="0000" onkeyup="updatePattern();"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label" for="attempts">Attempts</label>
+					<div class="col-lg-4">
+						<input class="form-control" id="attempts" type="text" value="500000" onkeyup="updateAttempts();"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-lg-4">
+						<button type="button" class="btn btn-default" id="add-block" onclick="addBlock();">Add Block</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<h1>Blockchain</h1>
+		<div class="row row-horizon" id="block-row"></div>
+  </div>
+  </body>
+</html>
